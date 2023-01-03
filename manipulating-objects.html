@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+  <script type="text/javascript" src="chrome-extension://fiikommddbeccaoicoejoniammnalkfa/inject.js"></script>
   <head>
     <title>Manipulating Objects</title>
     <script src="https://webspace.run"></script>
@@ -17,7 +18,6 @@
         background-color: #061139;
       }
     </style>
-    <meta name="webspace.keys.owner" content="eyJjcnYiOiJQLTI1NiIsImV4dCI6dHJ1ZSwia2V5X29wcyI6WyJ2ZXJpZnkiXSwia3R5IjoiRUMiLCJ4IjoicHVDZlhHMWdtNktiaE51dzRhd3VuN2ZHQTB0SEktbzhGZVNnTXpHOVFINCIsInkiOiJfUkp0eG5YVWVwemlkdGcwMXpXcjJTOGdRSFFEdVhodnNkdDV1OEdXMFk4IiwiaHViX2lkIjoiRUxoUnFkVko4dHFnVm04QiJ9" />
     <meta name="webspace.environment.type" content="terrain" />
     <meta name="webspace.environment.terrain.colors.ground" content="#1D1D1D" />
     <meta name="webspace.environment.terrain.colors.edge" content="#1E1000" />
@@ -31,15 +31,17 @@
     <meta name="webspace.environment.terrain.seed" content="99" />
     <meta name="webspace.environment.spawn_point.transform" content="translate3d(-208cm, 75cm, -700cm) rotate3d(-0.176, 0.983, 0.055, 0.610rad)" />
     <meta name="webspace.environment.spawn_point.radius" content="0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" />
+    <meta name="webspace.keys.owner" content="eyJjcnYiOiJQLTI1NiIsImV4dCI6dHJ1ZSwia2V5X29wcyI6WyJ2ZXJpZnkiXSwia3R5IjoiRUMiLCJ4IjoiM182NHJqN3EyVGFFTnVMR1F3U2o3clFVaHBtVEFZR3hYMTh1Wkd5SHNVWSIsInkiOiJnRXdRMXlLR3dmLWM2LXlUT093T2V2MmdtYVpUbk9aM3lHZi1aams1WkF3IiwiaHViX2lkIjoiOTJoQW5RYVV0dEtLTWE1RSJ9" />
   </head>
-  <body>
+  <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
     <model id="4a17v3x" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(-1085cm, 511cm, -1799cm) scale3d(2.29, 2.29, 2.29); "></model>
     <model id="47tzuwn" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(-628cm, 511cm, -1799cm) scale3d(2.29, 2.29, 2.29); "></model>
     <model id="2s0e9fu" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(-170cm, 511cm, -1799cm) scale3d(2.29, 2.29, 2.29); "></model>
     <model id="nycxgo6" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(288cm, 511cm, -1799cm) scale3d(2.29, 2.29, 2.29); "></model>
     <model id="9w9rz7w" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(745cm, 511cm, -1799cm) scale3d(2.29, 2.29, 2.29); "></model>
     <model id="qd2qf7e" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(1203cm, 511cm, -1799cm) scale3d(2.29, 2.29, 2.29); "></model>
-    <model id="0fbbw26" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(2001cm, 511cm, -1571cm) rotate3d(0.000, -1.000, 0.000, 1.571rad) scale3d(2.29, 2.29, 2.29); " draggable=""></model>
+    <model id="0fbbw26" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(-2902cm, 500cm, -351cm) rotate3d(0.000, -1.000, -0.000, 1.571rad) scale3d(2.29, 2.29, 2.29); " draggable=""></model>
     <model id="jfefz30" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(1401cm, 511cm, -1114cm) rotate3d(0.000, -1.000, 0.000, 1.571rad) scale3d(2.29, 2.29, 2.29); "></model>
     <model id="9zng0yo" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(1401cm, 511cm, -656cm) rotate3d(0.000, -1.000, 0.000, 1.571rad) scale3d(2.29, 2.29, 2.29); "></model>
     <model id="mcmwb0u" type="model/vnd.svox" src="assets/wall_raised-997238.svox" style="transform: translate3d(1401cm, 511cm, -198cm) rotate3d(0.000, -1.000, 0.000, 1.571rad) scale3d(2.29, 2.29, 2.29); "></model>
@@ -94,16 +96,14 @@
     <model id="s65l08c" type="model/vnd.svox" src="assets/table_fancy_2x3-101528.svox" draggable="" style="transform: translate3d(-581cm, -86cm, -924cm) scale3d(1.46, 1.46, 1.46); "></model>
     <model id="2h290f5" type="model/vnd.svox" src="assets/table_fancy_2x3-101528.svox" style="transform: translate3d(588cm, -86cm, -924cm) scale3d(1.46, 1.46, 1.46); "></model>
     <model id="vewq8dk" type="model/vnd.svox" src="assets/shield-603869.svox" style="transform: translate3d(1288cm, 640cm, -824cm) rotate3d(0.002, 1.000, 0.000, 1.533rad) scale3d(1.30, 1.30, 1.30); " data-stack-axis="backward"></model>
-    <model id="vfywp9l" type="model/vnd.svox" src="assets/simple-cube.svox" draggable="" style="transform: translate3d(-289cm, 76cm, -1170cm) rotate3d(0.000, -1.000, 0.000, 0.785rad) scale3d(0.44, 0.44, 0.44); "></model>
     <model id="o1oyfjd" type="model/vnd.svox" src="assets/simple-cube.svox" draggable="" style="transform: translate3d(-294cm, 76cm, -1355cm) scale3d(0.44, 0.44, 0.44); "></model>
-    <model id="s0f1nbl" type="model/vnd.svox" src="assets/simple-cube.svox" draggable="" style="transform: translate3d(-126cm, 76cm, -1181cm) scale3d(0.44, 0.44, 0.44); "></model>
     <model id="avos5sm" type="model/vnd.svox" src="assets/simple-cube.svox" draggable="" style="transform: translate3d(-66cm, 76cm, -1361cm) rotate3d(0.000, 1.000, 0.000, 0.785rad) scale3d(0.44, 0.44, 0.44); "></model>
-    <model id="3yessnx" type="model/vnd.svox" src="assets/simple-cube.svox" draggable="" style="transform: translate3d(-270cm, 192cm, -1174cm) scale3d(0.44, 0.44, 0.44); "></model><label id="jmxpyh7" contenteditable="" style="color: rgb(194, 215, 255); width: min-content; height: min-content; background-color: rgb(83, 0, 112); font-family: sans-serif; transform: translate3d(-637cm, 316cm, -1019cm) rotate3d(-0.272, 0.959, 0.078, 0.607rad) scale3d(1.97, 1.97, 1.97); ">
+    <label id="jmxpyh7" contenteditable="" style="color: rgb(194, 215, 255); width: min-content; height: min-content; background-color: rgb(83, 0, 112); font-family: monospaced; transform: translate3d(-637cm, 316cm, -1019cm) rotate3d(-0.272, 0.959, 0.078, 0.607rad) scale3d(1.97, 1.97, 1.97); ">
       <h1>Here's a little staging area to play around with manipulating objects.</h1>
       <p><br /></p>
-      <h1>Try moving these cubes,<span style="background-color: transparent; color: rgb(0, 0, 0);"> </span>snapping them to walls, etc.</h1>
+      <h1>Try moving these cubes,<span style="color: rgb(0, 0, 0); background-color: transparent;"> </span>snapping them to walls, etc.</h1>
     </label><label id="mufj37u" contenteditable="" style="color: rgb(255, 204, 157); width: min-content; height: min-content; background-color: rgb(0, 71, 112); font-family: sans-serif; transform: translate3d(349cm, 316cm, -1143cm) rotate3d(-0.485, -0.864, -0.138, 0.665rad) scale3d(2.18, 2.18, 2.18); ">
-      <h1><span style="color: rgb(0, 0, 0); background-color: transparent;">✨</span>Things to try:</h1>
+      <h1><span style="background-color: transparent; color: rgb(0, 0, 0);">✨</span>Things to try:</h1>
       <p><br /></p>
       <ol>
         <li>Right click and drag to move objects. Or hold <strong>TAB.</strong></li>
@@ -132,5 +132,5 @@
       <h1>Hover and press <strong>F</strong> to Focus on this panel</h1>
     </label>
 
-  </body>
+  </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>
